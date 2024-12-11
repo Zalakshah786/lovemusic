@@ -3,15 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Music Website</title>
+  <title>Spotify Playlist Transfer Protocol</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Music Website</h1>
+    <h1>Spotify Playlist Transfer Protocol</h1>
   </header>
+  <section id="authButtons">
+    <button id="signupBtn">Sign Up</button>
+    <button id="loginBtn">Login</button>
+  </section>
 
-  <section id="playlist">
+  <section id="signup" style="display:none;">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="signupResponse"></p>
+  </section>
+
+  <section id="playlist" style="display:none;">
     <h2>Music Playlist</h2>
     <ul>
       <li>
@@ -30,13 +46,8 @@
           Your browser does not support the audio element.
         </audio>
       </li>
-      <!-- Add more songs here -->
     </ul>
   </section>
-
-  <footer>
-    <p>Created by Your Name</p>
-  </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
