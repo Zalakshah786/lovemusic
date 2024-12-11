@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spotify Artist Search</title>
+  <title>My Music Website</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="app-container">
-    <h1>Spotify Artist Search</h1>
-    <form id="search-form">
-      <input type="text" id="search-input" placeholder="Search for an artist..." required>
-      <button type="submit">Search</button>
-    </form>
-    <div id="results"></div>
-    <div id="tracks-container">
-        <!-- Top tracks will appear here -->
-      </div>
-      
-  </div>
+  <header>
+    <h1>Welcome to My Music Website</h1>
+  </header>
+
+  <section id="playlist">
+    <h2>Music Playlist</h2>
+    <ul>
+      <li>
+        <img src="song1.jpg" alt="Song 1 Cover">
+        <span>Song Title - Artist Name</span>
+        <audio controls>
+          <source src="song1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li>
+        <img src="song2.jpg" alt="Song 2 Cover">
+        <span>Song Title - Artist Name</span>
+        <audio controls>
+          <source src="song2.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <!-- Add more songs here -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>Created by Your Name</p>
+  </footer>
+
   <script src="assets/js/script.js"></script>
 </body>
 </html>
